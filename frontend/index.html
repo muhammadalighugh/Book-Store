@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>📚 Book Store</h1>
+        <nav>
+            <button id="loginBtn">Login</button>
+            <button id="registerBtn">Register</button>
+            <button id="logoutBtn" style="display: none;">Logout</button>
+        </nav>
+    </header>
+
+    <section id="authSection">
+        <h2>User Authentication</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="registerUser">Register</button>
+        <button id="loginUser">Login</button>
+        <p id="authMessage"></p>
+    </section>
+
+    <section id="bookSearch">
+        <h2>Search for Books</h2>
+        <input type="text" id="searchInput" placeholder="Search by Title, Author, or ISBN">
+        <button id="searchBtn">Search</button>
+    </section>
+
+    <section id="booksList">
+        <h2>Available Books</h2>
+        <div id="booksContainer"></div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script src="books.js"></script>
+</body>
+</html>
